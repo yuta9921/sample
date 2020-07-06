@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- fontawesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- font ----------------->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <title>＞企業用LPサイト</title>
+</head>
+
+<body>
+  <!-- 左右の余白消す -->
+<div class="wrap">
+  <header>
+    <!-- header-scond ヘッダー１行目 -->
+    <div class="header-first">
+      <div class="header-first-left">
+        <img src="./img/logo.png" alt="ロゴ">
+        <h3>test company</h3>
+
+      </div>
+      <div class="header-first-right">
+        <p>search</p>
+        <a href="#" id="search"><img src="./img/icon-search.png" alt="検索アイコン"></a>
+      </div>
+    </div>
+    <!-- header-scond ヘッダー 検索まど -->
+    <div class="header-search">
+      <form type="search" name="search" placeholder="キーワードを入力" class="searchArea">
+        <input type="text" placeholder="  テストです  実際には検索できません" class="searchText">
+      </form>
+    </div>
+    <!-- header-scond ヘッダー２行目 -->
+    <div class="header-scond">
+      <div class="header-scond-wrapper">
+        <div class="header-item" id="information"><a href="#">企業情報</a></div>
+        <div class="header-item" id="introduction"><a href="#">企業紹介</a></div>
+        <div class="header-item" id="news"><a href="#">ニュース</a></div>
+        <div class="header-item" id="adoption"><a href="#">採用情報</a></div>
+        <div class="header-item" id="service"><a href="#">サービス</a></div>
+        <div class="header-item" id="investor"><a href="#">投資家情報</a></div>
+        <div class="header-item" id="future"><a href="#">次の100年</a></div>
+      </div>
+      <!-- ホバーされた時のもの -->
+      <div class="header-second-hover">
+
+        <!-- 企業情報のホバー-->
+        <div class="row" id="information-hover">
+          <div class="col-4">
+            <img src="./img/image.png" alt="イメージ画像">
+          </div>
+          <div class="col-3">
+            <p>社長メッセージ</p>
+            <p>理念</p>
+            <p>戦略</p>
+            <p>会社概要</p>
+            <p>役員一覧</p>
+          </div>
+          <div class="col-3">
+            <p>アクセス</p>
+            <p>組織図</p>
+            <p>事業部門</p>
+            <p>主要グループ会社</p>
+          </div>
+        </div>
+
+        <!-- 企業紹介のホバー-->
+        <div class="row" id="introduction-hover">
+          <div class="col-4">
+            <img src="./img/image.png" alt="イメージ画像">
+          </div>
+          <div class="col-3">
+            <p>企業紹介</p>
+            <p>理念</p>
+            <p>戦略</p>
+            <p>会社概要</p>
+            <p>役員一覧</p>
+          </div>
+          <div class="col-3">
+            <p>アクセス</p>
+            <p>組織図</p>
+            <p>事業部門</p>
+            <p>主要グループ会社</p>
+          </div>
+        </div>
+
+        <!-- ニュースのホバー-->
+        <div class="row" id="news-hover">
+          <div class="col-4">
+            <img src="./img/image.png" alt="イメージ画像">
+          </div>
+          <div class="col-3">
+            <p>ニュース</p>
+            <p>理念</p>
+            <p>戦略</p>
+            <p>会社概要</p>
+            <p>役員一覧</p>
+          </div>
+          <div class="col-3">
+            <p>アクセス</p>
+            <p>組織図</p>
+            <p>事業部門</p>
+            <p>主要グループ会社</p>
+          </div>
+        </div>
+
+        <!-- 採用情報のホバー-->
+        <div class="row" id="adoption-hover">
+          <div class="col-md-4">
+            <img src="./img/image.png" alt="イメージ画像">
+          </div>
+          <div class="col-md-3">
+            <p>採用情報</p>
+            <p>理念</p>
+            <p>戦略</p>
+            <p>会社概要</p>
+            <p>役員一覧</p>
+          </div>
+          <div class="col-md-3">
+            <p>アクセス</p>
+            <p>組織図</p>
+            <p>事業部門</p>
+            <p>主要グループ会社</p>
+          </div>
+        </div>
+
+        <!-- サービスのホバー-->
+        <div class="row" id="service-hover">
+          <div class="col-4">
+            <img src="./img/image.png" alt="イメージ画像">
+          </div>
+          <div class="col-3">
+            <p>サービス</p>
+            <p>理念</p>
+            <p>戦略</p>
+            <p>会社概要</p>
+            <p>役員一覧</p>
+          </div>
+          <div class="col-3">
+            <p>アクセス</p>
+            <p>組織図</p>
+            <p>事業部門</p>
+            <p>主要グループ会社</p>
+          </div>
+        </div>
+
+        <!-- 投資家情報のホバー-->
+        <div class="row" id="investor-hover">
+          <div class="col-4">
+            <img src="./img/image.png" alt="イメージ画像">
+          </div>
+          <div class="col-3">
+            <p>投資家情報</p>
+            <p>理念</p>
+            <p>戦略</p>
+            <p>会社概要</p>
+            <p>役員一覧</p>
+          </div>
+          <div class="col-3">
+            <p>アクセス</p>
+            <p>組織図</p>
+            <p>事業部門</p>
+            <p>主要グループ会社</p>
+          </div>
+        </div>
+
+        <!-- 次の100年のホバー-->
+        <div class="row" id="future-hover">
+          <div class="col-4">
+            <img src="./img/image.png" alt="イメージ画像">
+          </div>
+          <div class="col-3">
+            <p>次の100年</p>
+            <p>理念</p>
+            <p>戦略</p>
+            <p>会社概要</p>
+            <p>役員一覧</p>
+          </div>
+          <div class="col-3">
+            <p>アクセス</p>
+            <p>組織図</p>
+            <p>事業部門</p>
+            <p>主要グループ会社</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- top  ----------------------------------------->
+  <section class="top">
+    <div class="container">
+      <div class="top-text-box">
+        <h1>hello world!</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- topics ----------------------------------------->
+
+  <section class="topics">
+    <div class="container">
+      <ul class="topics-wrapper">
+        
+        <li class="li-odd-number">
+          <div class="day">2020.1.1</div>
+          <div class="label">ラベル</div>
+          <div class="text">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</div>
+        </li>
+
+        <li>
+          <div class="day">2020.1.1</div>
+          <div class="label">ラベル</div>
+          <div class="text">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</div>
+        </li>
+
+        <li class="li-odd-number">
+          <div class="day">2020.1.1</div>
+          <div class="label">ラベル</div>
+          <div class="text">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</div>
+        </li>
+
+        <li>
+          <div class="day">2020.1.1</div>
+          <div class="label">ラベル</div>
+          <div class="text">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</div>
+        </li>
+
+        <li class="li-odd-number">
+          <div class="day">2020.1.1</div>
+          <div class="label">ラベル</div>
+          <div class="text">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</div>
+        </li>
+
+      </ul>
+
+      <div class="topics-text">
+        <p>【重要なお知らせ】 ニュースニュースニュースニュースニュース</p><br>
+        <p>【重要なお知らせ】 ニュースニュースニュースニュースニュース</p><br>
+        <p>【重要なお知らせ】 ニュースニュースニュースニュースニュース</p><br>
+      </div>
+    </div>
+  </section>
+  <!-- ----------------pictures ------------------------>
+
+  <section class="pictures">
+    <div class="row pictures-first">
+      <img src="./img/pictures1.jpg" alt="">
+      <!-- 1段目のコード -->
+      <div class="pictures-text">
+        <h3>事業紹介</h3>
+        <h2>test companyの事業</h2>
+        <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
+      </div>
+    </div>
+    <!-- 2段目のコード -->
+    <div class="pictures-second">
+      <div class="row">
+        <div class="col-md-6 picture2">
+          <div class="picture2-wrapper">
+            <h3>伝統芸能</h3>
+            <p>テストテストテストテストテストテストテストテストテストテスト
+              テストテストテストテストテストテストテストテストテストテスト
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="row">
+            <div class="col-md-6 picture3">
+              <h3>女性にも優しい</h3>
+            </div>
+            <div class="col-md-6 picture4">
+              <h3>海外との繋がり</h3>
+            </div>
+            <div class="col-md-6 picture5">
+              <h3>アクセス</h3>
+            </div>
+            <div class="col-md-6 picture6">
+              <h3>テクノロジー</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- six-point   ------------------------------------------------------------------------------- -->
+  <section class="six-point">
+    <div class="container">
+      <h3 class="six-point-top">6つの事業分野</h3>
+      <ul class="row">
+        <div class="col-12 col-md-6 point-icon-wrapper">
+        <li class="fa fa-cog ">
+          <p>金属</p>
+        </li>
+        <li class="fa fa-thumbs-up ">
+          <p>サポート</p>
+        </li>
+        <li class="fa fa-plane ">
+          <p>世界規模</p>
+        </li>
+      </div>
+      <div class="col-12 col-md-6 point-icon-wrapper">
+        <li class="fa fa-tree ">
+          <p>自然</p>
+        </li>
+        <li class="fa fa-signal ">
+          <p>成長</p>
+        </li>
+        <li class="fa fa-motorcycle ">
+          <p>活動</p>
+        </li>
+      </div>
+      </ul>
+      <div class="six-point-text">
+        <p>テストグループは６つの事業部門と国内・海外の組織が連携し、グローバルに幅広い産業分野で事業活動を展開しています。</p>
+        <p>強固なビジネス基盤と多様で高度な機能を戦略的・有機的に統合することで、変化を先取りし、既存の枠組みを超えて社会課題を解決し、新たな価値を創造していきます。</p>
+      </div>
+    </div>
+  </section>
+  <!-- group ------------------------------------------->
+  <section class="group">
+    <div class="group-top row">
+      <div class="group-top-container col-12">
+        <h3>企業情報</h3>
+        <h2>グループについて</h2>
+        <p>私たちは、常に変化を先取りして新たな価値を創造し、<br>
+          広く社会に貢献するグローバルな企業グループを目指します。</p>
+      </div>
+    </div>
+
+    <div class="row group-second">
+      <div class="col-md-3 col-sm-6 group2">
+        <h3>社長メッセージ</h3>
+      </div>
+      <div class="col-md-3 col-sm-6 group3">
+        <h3>理念と戦略</h3>
+      </div>
+      <div class="col-md-3 col-sm-6 group4">
+        <h3>会社情報</h3>
+      </div>
+      <div class="col-md-3 col-sm-6 group5">
+        <h3>海外拠点</h3>
+      </div>
+    </div>
+  </section>
+  <section class="graph">
+    <div class="container">
+      <div class="graph-top">
+        <h2>グラフで見るテストグループ</h2>
+      </div>
+      <div class="graph-body row">
+        <div class="graph-img-wrapper col-md-6">
+        <img src="./img/graph.jpg" alt="グラフの画像">
+      </div>
+        <p class="col-md-6">
+          テストグループは、企業活動を通じて常に社会課題に真摯に取り組み、社会とともに持続的に成長することと考えています。<br>
+          グラフから分かる通り、年々我が社の売り上げは成長して売る傾向にあります。<br>
+          マテリアリティを経営の根幹に据え、社会との無数の接点において社会課題をより一層意識することで、事業活動を通じた社会課題の解決に積極的に取り組みます。
+        </p>
+      </div>
+      <div class="graph-btn">
+        <a href="#">詳しく見る</a>
+      </div>
+    </div>
+  </section>
+  <!-- cards ------------------------------------------------->
+  <section class="cards">
+    <div class="container">
+      <h3>スペシャルコンテンツ</h3>
+      <div class="card-wrapper row">
+
+        <div class="card-item col-md-3 col-sm-6">
+          <img src="./img/image.png" alt="">
+          <h3>title</h3>
+          <p>テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト </p>
+        </div>
+        <div class="card-item col-md-3 col-sm-6">
+          <img src="./img/image.png" alt="">
+          <h3>title</h3>
+          <p>テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト </p>
+        </div>
+        <div class="card-item col-md-3 col-sm-6">
+          <img src="./img/image.png" alt="">
+          <h3>title</h3>
+          <p>テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト </p>
+        </div>
+        <div class="card-item col-md-3 col-sm-6">
+          <img src="./img/image.png" alt="">
+          <h3>title</h3>
+          <p>テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト テスト </p>
+        </div>
+      </div>
+      <div class="card-news">
+        <ul class="topics-wrapper">
+
+          <li class="li-odd-number">
+            <div class="day">2020.1.1</div>
+            <div class="text">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</div>
+          </li>
+          <li>
+            <div class="day">2020.1.1</div>
+            <div class="text">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</div>
+          </li>
+          <li class="li-odd-number">
+            <div class="day">2020.1.1</div>
+            <div class="text">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</div>
+          </li>
+          <li>
+            <div class="day">2020.1.1</div>
+            <div class="text">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- sns--------------------------- -->
+  <section class="sns">
+    <div class="container">
+      <div class="sns-wrapper">
+        <a href="#"><i class="fab fa-facebook "></i></a>
+        <a href="#"><i class="fab fa-twitter "></i></a>
+        <a href="#"><i class="fab fa-youtube "></i></a>
+        <a href="#"><i class="fab fa-google-plus-g "></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- footer -------------------------------------------------->
+  <footer>
+    <div class="container">
+      <ul class="footer-items">
+        <li><a href="#">お問い合わせ</a></li>
+        <li><a href="#">サイトのご利用</a></li>
+        <li><a href="#">基本方針</a></li>
+        <li><a href="#">サイトマップ</a></li>
+        <li><a href="#">プライバシー・ポリシー</a></li>
+        <li><a href="#">コミュニティ</a></li>
+      </ul>
+      <div class="copylight">
+        <p>©︎2020 テストカンパニー</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="to-top">
+    <a href="#" class="to-top-btn"><img src="./img/icon-pagetop.png" alt="トップへ戻るボタン"></a>
+  </div>
+
+
+
+</div>
+  <!-- jQuery -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
